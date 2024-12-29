@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Newsletter from "../components/landing/newsletter.vue";
+import Socials from "../components/landing/socials.vue";
+import Logo from "../components/layout/logo.vue";
 
 useHead({
   title: 'Accueil',
@@ -48,7 +50,7 @@ const images = [{
   </div>
   <div class="relative inline-block w-11/12 md:w-7/12 left-1/2 -translate-x-1/2">
     <img src="/imgs/Landing/ciel.avif" class="mt-16 w-full h-56 object-cover rounded-xl">
-    <div class="absolute bottom-0 w-[100%]">
+    <div class="absolute bottom-3 w-[100%]">
       <p class=" text-xl md:text-[200%] font-bold text-center uppercase text-white">Une vue incroyable sur l'océan et le coucher de
         soleil</p>
     </div>
@@ -71,7 +73,8 @@ const images = [{
   </div>
 
   <Newsletter/>
-
+  <Socials />
+  <logo />
 </template>
 
 <style scoped>

@@ -1,14 +1,13 @@
 <template>
   <footer class="bg-gray-600 text-white">
-    <section class="grid grid-cols-4 mx-10 justify-items-center pt-10">
-
+    <section class="grid grid-cols-2 gap-y-6 md:grid-cols-4 mx-5md:mx-16 justify-items-center pt-10 gap-x-20 pb-6">
       <div>
         <h5 class="font-semibold">Réseaux Sociaux</h5>
-        <ul class="mt-3 px-3">
-          <li>Discord</li>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Tiktok</li>
+        <ul class="mt-3 px-3 space-y-1">
+          <li><img src="/imgs/socials/discord.png" class="h-7 mx-auto" /></li>
+          <li><img src="/imgs/socials/instagram.png" class="h-7 mx-auto" /></li>
+          <li><img src="/imgs/socials/facebook.png" class="h-7 mx-auto" /></li>
+          <li><img src="/imgs/socials/tiktok.png" class="h-7 mx-auto" /></li>
         </ul>
       </div>
       <div>
