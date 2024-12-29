@@ -1,6 +1,8 @@
 <script setup lang="ts">
 
 
+import Newsletter from "../components/landing/newsletter.vue";
+
 const images = [{
   src: "/imgs/Landing/plage.avif",
   alt: "Hendaye",
@@ -33,6 +35,8 @@ const images = [{
       <LandingCard v-for="image in images" :key="image.src" :img="image.src" :alt="image.alt" :text="image.text"/>
     </div>
   </div>
+
+  <Newsletter />
 
 </template>
 

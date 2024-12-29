@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: meltoz
-  IMAGE_NAME: vibe
+  IMAGE_NAME: vib
 
 jobs:
   build-and-push-image:
