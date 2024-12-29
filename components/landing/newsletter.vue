@@ -24,9 +24,9 @@ const closeConfirmModal = () => {
 
 <template>
 <section class="bg-gradient-to-t from-pink-400 to-pink-100 to-60%">
-  <div class="mx-[21%]">
+  <div class="md:mx-[21%] mx-6">
     <h3 class="text-2xl py-6">Inscription à la newsletter</h3>
-    <div class="flex justify-between mx-16 pb-16">
+    <div class="flex flex-col md:flex-row gap-5 md:gap-0  justify-between mx-3 md:mx-16 pb-6 md:pb-16">
       <p class="basis-6/12">Inscrivez vous à notre <span class="font-semibold">Newsletter</span> pour recevoir les informations du festival et les bons plans de la billetterie !</p>
       <button @click="openRegisterModal" class="rounded-md bg-green-200 px-6 py-2 text-xl font-semibold hover:bg-green-100">S'abonner</button>
     </div>

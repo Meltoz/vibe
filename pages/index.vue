@@ -46,15 +46,15 @@ const images = [{
       <LandingCard v-for="image in images" :key="image.src" :img="image.src" :alt="image.alt" :text="image.text"/>
     </div>
   </div>
-  <div class="relative inline-block w-7/12 left-1/2 -translate-x-1/2">
+  <div class="relative inline-block w-11/12 md:w-7/12 left-1/2 -translate-x-1/2">
     <img src="/imgs/Landing/ciel.avif" class="mt-16 w-full h-56 object-cover rounded-xl">
     <div class="absolute bottom-0 w-[100%]">
-      <p class="text-[200%] font-bold text-center uppercase text-white">Une vue incroyable sur l'océan et le coucher de
+      <p class=" text-xl md:text-[200%] font-bold text-center uppercase text-white">Une vue incroyable sur l'océan et le coucher de
         soleil</p>
     </div>
   </div>
 
-  <div class="grid md:grid-cols-5 grid-col-1 mx-5 md:mx-32 md:mt-32 mb-16 ">
+  <div class="grid md:grid-cols-5 grid-col-1 mx-5 md:mx-32 mt-16 md:mt-32  mb-16 ">
     <p class="md:col-span-3 md:col-start-2 text-xl">Chez VIB tout est pensé pour <span class="font-semibold">faciliter votre séjour</span>
       et rendre votre expérience
       encore plus <span class="font-semibold">agréable</span>. Dans la
