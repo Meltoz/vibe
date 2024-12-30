@@ -21,7 +21,7 @@
   </div>
   <section class="mx-5 lg:mx-[24%]">
     <h4 class="contour text-5xl lg:text-6xl font-semibold my-6">Nos partenaires</h4>
-    <div class="flex justify-center gap-6 flex-wrap">
+    <div class="flex md:justify-around justify-center gap-6 lg:gap-0 flex-wrap">
       <layout-card v-for="partner in partners" :key="partner.alt" :img="partner.img" :alt="partner.alt"/>
     </div>
   </section>
