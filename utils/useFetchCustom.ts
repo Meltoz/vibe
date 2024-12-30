@@ -1,5 +1,4 @@
 import { $fetch } from 'ofetch';
-import { useRuntimeConfig } from '#app';
 
 export const useFetchCustom = async (url: string, options = {}) => {
   const config = useRuntimeConfig();
@@ -8,4 +7,4 @@ export const useFetchCustom = async (url: string, options = {}) => {
     ...options,
   });
   return response;
-};
+}

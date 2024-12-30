@@ -4,7 +4,7 @@ import Socials from "../components/landing/socials.vue";
 import Logo from "../components/layout/logo.vue";
 
 useHead({
-  title: 'Accueil',
+  title: 'VIB - Accueil',
   meta: [{
     name: 'description',
     content: 'Page d\'accueil du festival VIB'

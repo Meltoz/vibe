@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      /* Mettre ici les variable du .env */
+      apiBaseUrl: '',
     },
   },
   compatibilityDate: '2024-11-01',

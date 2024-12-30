@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <div class="container">
-      <ul class="hidden md:flex justify-evenly h-16 items-center">
+    <div>
+      <ul class="hidden lg:flex justify-evenly h-16 items-center">
         <li>
           <NuxtLink to="/">
             <img src="/imgs/vib.svg" class="h-12"/>
@@ -13,7 +13,7 @@
           </NuxtLink>
         </li>
       </ul>
-      <div class="md:hidden flex justify-between mx-5 items-center" @click="isOpen = !isOpen" >
+      <div class="lg:hidden flex justify-between mx-5 items-center" @click="isOpen = !isOpen" >
         <NuxtLink to="/">
           <img src="/imgs/vib.svg" class="h-6"/>
         </NuxtLink>
@@ -22,7 +22,7 @@
     </div>
 
 
-    <ul class="md:hidden" v-if="isOpen">
+    <ul class="lg:hidden" v-if="isOpen">
       <li v-for="nav in navs" :key="nav.name">
         <NuxtLink :to="nav.to" class="block px-6 py-2">{{ nav.name }}</NuxtLink>
       </li>
