@@ -1,5 +1,5 @@
-import { $fetch } from "ofetch";
-import { useRuntimeConfig } from "#app";
+import { $fetch } from 'ofetch';
+import { useRuntimeConfig } from '#app';
 
 export const useFetchCustom = async (url: string, options = {}) => {
   const config = useRuntimeConfig();
