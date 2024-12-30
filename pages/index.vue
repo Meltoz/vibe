@@ -56,7 +56,7 @@ const images = [{
     </div>
   </div>
 
-  <div class="grid md:grid-cols-5 grid-col-1 mx-5 md:mx-32 mt-16 md:mt-32  mb-16 ">
+  <div class="grid md:grid-cols-5 grid-col-1 mx-5 md:mx-32 mt-16 md:mt-32 mb-16">
     <p class="md:col-span-3 md:col-start-2 text-xl">Chez VIB tout est pensé pour <span class="font-semibold">faciliter votre séjour</span>
       et rendre votre expérience
       encore plus <span class="font-semibold">agréable</span>. Dans la
