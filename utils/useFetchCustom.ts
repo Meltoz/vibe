@@ -7,4 +7,4 @@ export const useFetchCustom = async (url: string, options = {}) => {
     ...options,
   });
   return response;
-}
+};
