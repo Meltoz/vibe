@@ -14,5 +14,13 @@
     "nationality": "États-Unis",
     "location": "Grande Scène",
     "img": "lana.webp"
+  },
+  {
+    "name": "Michel",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Pop",
+    "nationality": "France",
+    "location": "Grande Scène",
+    "img": "lana.webp"
   }
 ]
