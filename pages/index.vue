@@ -31,8 +31,8 @@ const images = [{
   <h1 class="text-7xl text-center contour font-semibold relative -top-12 z-10">Vibrez au rythme de la musique</h1>
   <h2 class="text-5xl text-gray-500 text-center -mt-6">Le 6 & 7 juin 2025</h2>
 
-  <div class="grid md:grid-cols-5 grid-col-1 mx-5 md:mx-32 mt-32 gap-20">
-    <p class="md:col-span-3 md:col-start-2 text-xl">Les <span class="font-semibold">6 et 7 juin 2025</span>, le Festival
+  <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 mx-5 md:mx-24 xl:mx-32 mt-32 gap-x-5 gap-y-20">
+    <p class="md:col-span-3 col-start-1 xl:col-start-2">Les <span class="font-semibold">6 et 7 juin 2025</span>, le Festival
       VIB vous donne rendez-vous à <span class="font-semibold">Hendaye</span> pour une
       expérience immersive et inoubliable. Imaginez-vous vibrer au rythme d’une <span class="font-semibold">programmation musicale envoûtante</span>,
       tout en
@@ -44,7 +44,7 @@ const images = [{
       instant restera gravé dans votre mémoire.
     </p>
 
-    <div class="col-start-1 md:col-start-2 md:col-span-3 grid grid-cols-subgrid gap-5 md:grid-cols-subgrid md:mt-20">
+    <div class="grid grid-cols-subgrid md:col-span-3 xl:col-start-2 gap-y-5">
       <LandingCard v-for="image in images" :key="image.src" :img="image.src" :alt="image.alt" :text="image.text"/>
     </div>
   </div>
