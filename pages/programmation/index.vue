@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {getAllPerformers} from "../../services/programmation.service";
-import type {Performer} from "../../models/performer";
 import type { FilterOptions } from '../../models/helper';
 
 const data = ref(await getAllPerformers(null, ''));
@@ -29,7 +28,7 @@ const filteredChanged = async (filter: FilterOptions) => {
 
   <p class="text-4xl text-center my-32">{{headerArtiste}} </p>
   <prog-filter @filtered="filteredChanged" />
-  <div class="grid grid-cols-3 gap-x-4 mx-32">
+  <div class="grid grid-cols-3 justify-center justify-items-center mx-40 gap-y-10 mt-20">
     <prog-card v-for="artist in data" :key="artist.name" :artist="artist" />
   </div>
 

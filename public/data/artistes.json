@@ -22,5 +22,13 @@
     "nationality": "France",
     "location": "Grande Scène",
     "img": "lana.webp"
+  },
+  {
+    "name": "Robert",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Pop",
+    "nationality": "France",
+    "location": "Grande Scène",
+    "img": "lana.webp"
   }
 ]
