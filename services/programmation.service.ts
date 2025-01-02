@@ -1,13 +1,10 @@
 import type { Performer } from '../models/performer';
 
-
 type Day = 'friday' | 'saturday';
 
 export const getAllPerformers = async (day: string, artistName: string): Promise<Performer[]> => {
   const config = useRuntimeConfig();
-  const response = await fetch(`${config.public.URL}/data/artistes.json`).then((res) =>
-    res.json()
-  );
+  const response = await fetch(`${config.public.URL}/data/artistes.json`).then((res) => res.json());
 
   // Déterminer les dates correspondantes aux jours
   const dayMapping: Record<Day, string> = {
