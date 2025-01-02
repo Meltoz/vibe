@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      apiBaseUrl: '',
+      URL: process.env.URL || 'https://vib.maximemarin.com',
     },
   },
   compatibilityDate: '2024-11-01',

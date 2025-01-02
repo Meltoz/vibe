@@ -1,9 +1,11 @@
 import type { Performer } from '../models/performer';
 
+
 type Day = 'friday' | 'saturday';
 
 export const getAllPerformers = async (day: string, artistName: string): Promise<Performer[]> => {
-  const response = await fetch('http://localhost:3000/data/artistes.json').then((res) =>
+  const config = useRuntimeConfig();
+  const response = await fetch(`${config.public.URL}/data/artistes.json`).then((res) =>
     res.json()
   );
 
