@@ -1,13 +1,38 @@
+<script setup lang="ts">
+import type { FilterOptions } from '../../models/helper';
+import {Search} from'lucide-vue-next';
+
+const emit = defineEmits<{
+  filtered: FilterOptions
+}>();
+const day = ref('');
+let artist: string = '';
+
+
+const filterChanged = () => {
+  emit('filtered', {day: day.value, artiste: artist});
+}
+
+const dayChanged = (daychanged: string) => {
+  day.value = daychanged;
+  filterChanged();
+}
+
+</script>
 <template>
   <section class="w-1/2 space-y-20 mx-auto">
     <div class="flex justify-center gap-3">
-      <button class=" py-2 rounded bg-green-800 font-semibold basis-1/3 shrink hover:bg-green-700"
+      <button
+        class=" py-2 rounded bg-green-600 font-semibold basis-1/3 shrink hover:bg-green-800"
+        :class="{'bg-green-700' : day === 'all'}"
         @click="dayChanged('all')">Tous</button>
       <button
         class=" py-2 rounded bg-blue-300 font-semibold basis-1/3 shrink hover:bg-blue-200"
+        :class="{'bg-blue-600' : day === 'friday'}"
         @click="dayChanged('friday')">Vendredi</button>
       <button
-        class=" py-2 rounded bg-pink-500  font-semibold basis-1/3 shrink hover:bg-pink-400"
+        class=" py-2 rounded bg-pink-500 font-semibold basis-1/3 shrink hover:bg-pink-400"
+        :class="{'bg-pink-700' : day === 'saturday'}"
         @click="dayChanged('saturday')">Samedi</button>
     </div>
     <div class="relative">
@@ -21,24 +46,3 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import type { FilterOptions } from '../../models/helper';
-import {Search} from'lucide-vue-next';
-
-const emit = defineEmits<{
-  filtered: FilterOptions
-}>();
-let day: string = '';
-let artist: string = '';
-
-
-const filterChanged = () => {
-  emit('filtered', {day: day, artiste: artist});
-}
-
-const dayChanged = (daychanged: string) =>{
-  day = daychanged;
-  filterChanged();
-}
-
-</script>
