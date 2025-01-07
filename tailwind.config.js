@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -10,10 +10,11 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      },
-    },
+      fontFamily: {
+        ruska: 'ruska',
+        roboto: 'Roboto'
+      }
+    }
   },
   plugins: [],
 }
