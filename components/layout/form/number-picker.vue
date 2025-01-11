@@ -3,7 +3,6 @@ import { Trash2 } from 'lucide-vue-next';
 
 const props = defineProps<{
   modelValue: number,
-  label: string,
   id: string,
   max?: number
 }>();
@@ -35,7 +34,7 @@ const reset = () => {
     <button @click="decrement"
             v-if="modelValue > 0"
             class="">-</button>
-    <input type="text" :id="id" :value="modelValue" readonly class="w-6 text-center"/>
+    <input type="text" :id="id" :value="modelValue" readonly class="w-6 text-center bg-transparent"/>
     <button @click="increment">+</button>
   </div>
 
