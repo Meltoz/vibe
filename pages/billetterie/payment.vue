@@ -5,7 +5,7 @@ import Stepper from '../../components/billetterie/stepper.vue';
 
 <template>
   <stepper :current-step="6">
-    <div>C'est le paiement, aller raque connard !</div>
+    <div class="text-8xl">C'est le paiement, aller raque connard !</div>
   </stepper>
 </template>
 

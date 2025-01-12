@@ -29,7 +29,7 @@ const reset = () => {
 </script>
 
 <template>
-<fieldset class="flex gap-2">
+<fieldset class="flex gap-2 text-base md:text-2xl">
   <div class="flex gap-2">
     <button @click="decrement"
             v-if="modelValue > 0"
