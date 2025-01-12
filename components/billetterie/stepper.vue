@@ -34,9 +34,9 @@ const prevStep = () => links[(props.currentStep-2)];
       </ul>
     </div>
       <slot></slot>
-    <section class="flex justify-between mx-5 gap-5 my-5">
-      <NuxtLink :to="prevStep()" v-if="currentStep > 1" class=" text-center py-3 text-2xl border-2 border-gray-500 rounded-xl grow">Retour</NuxtLink>
-      <NuxtLink :to="nextStep()" class=" text-center py-3 text-2xl bg-[#E4819B] rounded-xl grow ">Suivant</NuxtLink>
+    <section class="flex justify-between mx-[25rem] gap-5 my-5">
+      <NuxtLink :to="prevStep()" v-if="currentStep > 1" class="px-16">Retour</NuxtLink>
+      <NuxtLink :to="nextStep()" class="px-16 bg-[#E4819B]">Suivant</NuxtLink>
     </section>
   </div>
 </template>

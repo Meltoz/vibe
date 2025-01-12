@@ -8,7 +8,3 @@ import Stepper from '../../components/billetterie/stepper.vue';
     <div class="text-8xl">C'est le paiement, aller raque connard !</div>
   </stepper>
 </template>
-
-<style scoped>
-
-</style>
