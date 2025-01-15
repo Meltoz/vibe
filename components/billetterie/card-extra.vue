@@ -39,12 +39,9 @@ const cards = [{
           :to="card.link"
           v-if="!active || active !== index+1"
           class="px-5 py-1.5  bg-[#E4819B] absolute bottom-1 xl:bottom-10 left-1/2 -translate-x-1/2 text-center rounded-lg font-semibold">Réserver</NuxtLink>
-
       </div>
     </div>
   </section>
-
-
 </template>
 
 <style scoped>
