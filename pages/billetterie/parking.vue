@@ -10,8 +10,8 @@ const g = ref(0)
 
 <template>
   <stepper :current-step="5">
-    <section class="grid grid-cols-1 place-items-center gap-y-10">
-      <billetterie-card title="Parking voiture seule" :price="15" class="w-1/2">
+    <section class="grid grid-cols-1 place-items-center gap-y-6 mx-6">
+      <billetterie-card title="Parking voiture seule" :price="15" class="xl:w-1/2">
         <template #description>
           <ul class="">
             <li>Tente pour une ou 2 personne(s) </li>
@@ -23,7 +23,7 @@ const g = ref(0)
           <number-picker id="mlskjdf" v-model="g" :max="10"/>
         </template>
       </billetterie-card>
-      <billetterie-card title="Parking de groupe de voiture" :price="40" class="w-1/2">
+      <billetterie-card title="Parking de groupe de voiture" :price="40" class="xl:w-1/2">
         <template #description>
           <ul class="">
             <li>Groupe de tentes à partir de 3 personnes jusqu’à 6 personnes </li>
@@ -35,7 +35,7 @@ const g = ref(0)
           <number-picker id="mlskjdf" v-model="g" :max="10"/>
         </template>
       </billetterie-card>
-      <billetterie-card title="Parking voiture et caravane" :price="70" class="w-1/2">
+      <billetterie-card title="Parking voiture et caravane" :price="70" class="xl:w-1/2">
         <template #description>
           <ul class="">
             <li>Groupe de tentes à partir de 6 personnes jusqu’à 12 personnes</li>

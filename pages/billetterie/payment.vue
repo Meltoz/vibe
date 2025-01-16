@@ -13,7 +13,7 @@ const closeModal = () => {
 <template>
   <stepper :current-step="6" @finished="() => isModalOpen = true">
     <section>
-      <div class="flex justify-center xl:justify-center gap-14 xl:gap-48 my-10">
+      <div class="flex justify-center xl:justify-center gap-14 md:gap-32 xl:gap-48 my-10">
         <button @click="() => (isPaypal = false)"
                 :class="{'bg-gray-400 hover:bg-gray-300': !isPaypal, 'hover:bg-gray-400': isPaypal }"
                 class="shadow-lg rounded-xl p-4 xl:py-2 xl:px-[68px] xl:h-full transition-all duration-200 shrink"
@@ -25,7 +25,7 @@ const closeModal = () => {
                 class="shadow-lg rounded-xl p-4 xl:py-2 xl:px-[68px] transition-all duration-200 shrink">
           <img src="/imgs/billetterie/paiement/paypal.svg" class="h-20 xl:h-full"/></button>
       </div>
-      <div v-if="isPaypal" class="mx-6 xl:mx-auto  max-w-5xl space-y-6">
+      <div v-if="isPaypal" class="mx-6 md:mx-auto  max-w-5xl space-y-6">
         <fieldset class="flex flex-col">
           <label for="email" class="px-5 font-semibold">Mail Paypal</label>
           <input type="email" placeholder="jean.serien@outlook.com" id="email"
@@ -39,7 +39,7 @@ const closeModal = () => {
           />
         </fieldset>
       </div>
-    <div v-if="!isPaypal" class="mx-5 xl:mx-auto max-w-5xl space-y-6">
+    <div v-if="!isPaypal" class="mx-5 xl:mx-auto xl:max-w-5xl space-y-6">
       <fieldset class="flex flex-col">
         <label for="number" class=" px-5 font-semibold">Numéro de carte</label>
         <input type="text" placeholder="1234 1234 1234 1234" id="number"

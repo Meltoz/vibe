@@ -10,8 +10,8 @@ const g = ref(0);
 <template>
   <layout-header title="Location vélo" img="/imgs/billetterie/hero2.avif" />
 <stepper :current-step="3">
-  <section class="grid grid-cols-1 place-items-center gap-y-10">
-    <billetterie-card title="Forfait 1h" :price="15" class="w-1/2">
+  <section class="grid grid-cols-1 place-items-center gap-y-6 mx-6">
+    <billetterie-card title="Forfait 1h" :price="15" class="xl:w-1/2">
       <template #description>
         <ul class="ta">
           <li>VTT, vélo de ville ou vélo enfant au choix.</li>
@@ -24,7 +24,7 @@ const g = ref(0);
         <number-picker id="mlskjdf" v-model="g" :max="10"/>
       </template>
     </billetterie-card>
-    <billetterie-card title="Forfait 4h" :price="55" class="w-1/2">
+    <billetterie-card title="Forfait 4h" :price="55" class="xl:w-1/2">
       <template #description>
         <ul class="ta">
           <li>VTT, vélo de ville ou vélo enfant au choix.</li>
@@ -37,7 +37,7 @@ const g = ref(0);
         <number-picker id="mlskjdf" v-model="g" :max="10"/>
       </template>
     </billetterie-card>
-    <billetterie-card title="Forfait 1 Jour" :price="160" class="w-1/2">
+    <billetterie-card title="Forfait 1 Jour" :price="160" class="xl:w-1/2">
       <template #description>
         <ul class="ta">
           <li>VTT, vélo de ville ou vélo enfant au choix.</li>
@@ -50,7 +50,7 @@ const g = ref(0);
         <number-picker id="mlskjdf" v-model="g" :max="10"/>
       </template>
     </billetterie-card>
-    <billetterie-card title="Forfait 2 Jour" :price="300" class="w-1/2">
+    <billetterie-card title="Forfait 2 Jour" :price="300" class="xl:w-1/2">
       <template #description>
         <ul class="ta">
           <li>VTT, vélo de ville ou vélo enfant au choix.</li>
@@ -63,7 +63,7 @@ const g = ref(0);
         <number-picker id="mlskjdf" v-model="g" :max="10"/>
       </template>
     </billetterie-card>
-    <billetterie-card title="Forfait de groupe" information="(à partir de 4 locations)" :price="10" class="w-1/2">
+    <billetterie-card title="Forfait de groupe" information="(à partir de 4 locations)" :price="10" class="xl:w-1/2">
       <template #description>
         <ul class="ta">
           <li>VTT, vélo de ville ou vélo enfant au choix.</li>
