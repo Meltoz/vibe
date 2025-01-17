@@ -26,9 +26,12 @@ const filteredChanged = async (filter: FilterOptions) => {
 <template>
   <layout-header title="Programmation" img="/imgs/programmation/header.avif" />
 
-  <p class="text-4xl text-center my-32">{{headerArtiste}} </p>
-  <prog-filter @filtered="filteredChanged" />
-  <div class="grid grid-cols-3 justify-center justify-items-center mx-40 gap-y-10 mt-20">
+  <p class="text-base md:text-4xl text-center my-6 md:my-32">{{headerArtiste}} </p>
+  <div class="mx-3">
+    <prog-filter @filtered="filteredChanged" />
+  </div>
+
+  <div class="grid grid-cols-2 xl:grid-cols-3 justify-items-stretch justify-center md:justify-items-center mx-3 xl:mx-40 gap-2 xl:gap-y-10 mt-20">
     <prog-card v-for="artist in data" :key="artist.name" :artist="artist" />
   </div>
 

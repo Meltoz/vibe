@@ -1,13 +1,5 @@
 [
   {
-    "name": "Maklemore",
-    "dateOfPerformance": "2025-06-07",
-    "style": "Pop",
-    "nationality": "États-Unis",
-    "location": "Grande Scène",
-    "img": "lana.webp"
-  },
-  {
     "name": "Lana Del Rey",
     "dateOfPerformance": "2025-06-06",
     "style": "Pop",
@@ -16,19 +8,259 @@
     "img": "lana.webp"
   },
   {
-    "name": "Michel",
-    "dateOfPerformance": "2025-06-06",
+    "name": "Maklemore",
+    "dateOfPerformance": "2025-06-07",
     "style": "Pop",
-    "nationality": "France",
+    "nationality": "États-Unis",
     "location": "Grande Scène",
-    "img": "lana.webp"
+    "img": "Macklemore.png"
   },
   {
-    "name": "Robert",
+    "name": "Mac Demarco",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Rock",
+    "nationality": "Canada",
+    "location": "Grande Scène",
+    "img": "Mac Demarco.png"
+  },
+  {
+    "name": "The Weeknd",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Pop",
+    "nationality": "Etats-Unis",
+    "location": "Grande Scène",
+    "img": "the weekend.webp"
+  },
+  {
+    "name": "Tame Impala",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Rock",
+    "nationality": "Australie",
+    "location": "Grande Scène",
+    "img": "Tame Impala.png"
+  },
+  {
+    "name": "Sufjan Stevens",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Folk",
+    "nationality": "Etats-Unis",
+    "location": "Grande Scène",
+    "img": "Sufjan Steven.png"
+  },
+  {
+    "name": "Kendrik Lamar",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Hip Hop",
+    "nationality": "Etats-Unis",
+    "location": "Grande Scène",
+    "img": "Kendrick Lamar.png"
+  },
+  {
+    "name": "Tyler The Creator",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "Etats-Unis",
+    "location": "Grande Scène",
+    "img": "Tyler The Creator.png"
+  },
+  {
+    "name": "Fall Out Boy",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Rock",
+    "nationality": "Etats-Unis",
+    "location": "Grande Scène",
+    "img": "Fall Out Boy.png"
+  },
+  {
+    "name": "Boards of Canada",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Electro",
+    "nationality": "Etats-Unis",
+    "location": "Grande Scène",
+    "img": "Boards of Canada.png"
+  },
+  {
+    "name": "Petit Biscuit",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Electro",
+    "nationality": "France",
+    "location": "Esplanade",
+    "img": "Petit Biscuit.png"
+  },
+  {
+    "name": "Miami Horror",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Pop",
+    "nationality": "Australie",
+    "location": "Esplanade",
+    "img": "Miami Horror.png"
+  },
+  {
+    "name": "Chinese Man",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Hip Hop",
+    "nationality": "France",
+    "location": "Esplanade",
+    "img": "Chinese Man.png"
+  },
+  {
+    "name": "Caba & JeanJass",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "Belgique",
+    "location": "Esplanade",
+    "img": "CaballeroJeanjass.jpg"
+  },
+  {
+    "name": "Stray Kids",
     "dateOfPerformance": "2025-06-06",
     "style": "Pop",
+    "nationality": "Corée du sud",
+    "location": "Esplanade",
+    "img": "Stray Kids.png"
+  },
+  {
+    "name": "Hoshi",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Alternatif",
     "nationality": "France",
-    "location": "Grande Scène",
-    "img": "lana.webp"
+    "location": "Esplanade",
+    "img": "Hoshi.webp"
+  },
+  {
+    "name": "Parov Stellar",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Electro",
+    "nationality": "Autriche",
+    "location": "Esplanade",
+    "img": "Parov Stellar.png"
+  },
+  {
+    "name": "Action Bronson",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "Etats-Unis",
+    "location": "Esplanade",
+    "img": "Action bronson.webp"
+  },
+  {
+    "name": "Damso",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Hip Hop",
+    "nationality": "France",
+    "location": "Esplanade",
+    "img": "Damso.png"
+  },
+  {
+    "name": "Westside Gunn",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "Etats-Unis",
+    "location": "Esplanade",
+    "img": "westside gunn.webp"
+  },
+  {
+    "name": "Koliga",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Soul",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "Kolinga.png"
+  },
+  {
+    "name": "Redlight",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Rock",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "red-light.jpg"
+  },
+  {
+    "name": "Satori",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Electro",
+    "nationality": "Pays-Bas",
+    "location": "Plage",
+    "img": "Satori.png"
+  },
+  {
+    "name": "Gaël Faye",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "GaelFaye.jpg"
+  },
+  {
+    "name": "Ojos de Brujo",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Flamenco",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "Ojos de Brujos.png"
+  },
+  {
+    "name": "WarEnd",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "warend.jpg"
+  },
+  {
+    "name": "Flavia Coelho",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Folk",
+    "nationality": "Angleterre",
+    "location": "Plage",
+    "img": "Flavia Coelho.png"
+  },
+  {
+    "name": "Altin Günn",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Rock",
+    "nationality": "Pays-Bas",
+    "location": "Plage",
+    "img": "altin gun.jpg"
+  },
+  {
+    "name": "VTSS",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Electro",
+    "nationality": "Pologne",
+    "location": "Plage",
+    "img": "VTSS.png"
+  },
+  {
+    "name": "Käärijä",
+    "dateOfPerformance": "2025-06-07",
+    "style": "Hip Hop",
+    "nationality": "Finlande",
+    "location": "Plage",
+    "img": "Kaarija-finlande-2023.webp"
+  },
+  {
+    "name": "Vitalic",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Electro",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "Vitalic.png"
+  },
+  {
+    "name": "John Maus",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Pop",
+    "nationality": "Etats-Unis",
+    "location": "Plage",
+    "img": "John Maus.png"
+  },
+  {
+    "name": "French 79",
+    "dateOfPerformance": "2025-06-06",
+    "style": "Eletro",
+    "nationality": "France",
+    "location": "Plage",
+    "img": "French 79.png"
   }
 ]

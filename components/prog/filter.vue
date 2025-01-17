@@ -20,7 +20,7 @@ const dayChanged = (daychanged: string) => {
 
 </script>
 <template>
-  <section class="w-1/2 space-y-20 mx-auto">
+  <section class="w-full md:w-1/2 space-y-6 md:space-y-20 px-3 md:mx-auto">
     <div class="flex justify-center gap-3">
       <button
         class=" py-2 rounded bg-green-600 font-semibold basis-1/3 shrink hover:bg-green-800"
@@ -35,12 +35,12 @@ const dayChanged = (daychanged: string) => {
         :class="{'bg-pink-700' : day === 'saturday'}"
         @click="dayChanged('saturday')">Samedi</button>
     </div>
-    <div class="relative">
+    <div class="relative px-10">
       <input v-model="artist"
              @change="filterChanged"
              placeholder="RECHERCHER"
-             class="p-1.5 border border-black w-full">
-      <Search class="absolute z-10 right-2 bottom-2"/>
+             class="p-1.5 border border-black w-full rounded-full md:rounded-xl pl-16">
+      <Search class="absolute z-10 right-14 bottom-2 "/>
     </div>
 
   </section>

@@ -13,6 +13,10 @@ export default {
       fontFamily: {
         ruska: 'ruska',
         roboto: 'Roboto'
+      },
+      colors: {
+        vink: '#E4819B',
+        vlue: '#99B8E2'
       }
     }
   },

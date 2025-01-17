@@ -79,7 +79,6 @@ const g = ref(0);
   </section>
 
   <card-extra :active="1"/>
-
 </stepper>
 </template>
 
