@@ -11,7 +11,7 @@ const props = defineProps<{
 
 <template>
 <div class="flex items-stretch px-6 xl:min-w-[55rem]">
-  <div class="w-8/12 md:w-8/12 rounded-l md:rounded-l-xl shadow-xl px-5">
+  <div class="w-8/12 md:w-8/12 rounded-l md:rounded-l-xl shadow-xl px-5 bg-gray-50">
     <h3 class="text-3xl font-semibold md:text-5xl text-center my-3">Pass {{title}}</h3>
     <p class="text-xs md:text-base">Comprend :</p>
     <ul class="pl-10 list-disc text-xs md:text-base">

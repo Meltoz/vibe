@@ -23,7 +23,7 @@ const props = defineProps<{
       <slot name="number"></slot>
     </div>
 
-    <div class="hidden md:block grid:col-start-2 justify-self-center space-y-4">
+    <div class="hidden md:block grid:col-start-2 justify-self-center place-items-center space-y-4">
       <span class="text-2xl font-semibold">{{price}}€</span>
       <slot name="number"></slot>
     </div>

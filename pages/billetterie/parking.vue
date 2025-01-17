@@ -5,7 +5,21 @@ import Extras from './extras.vue';
 import CardExtra from '../../components/billetterie/card-extra.vue';
 import NumberPicker from '../../components/layout/form/number-picker.vue';
 
-const g = ref(0)
+const car = ref(0);
+const group = ref(0);
+const caravane = ref(0);
+
+onMounted(() => {
+  car.value = Number.parseInt(sessionStorage.getItem('car') || '0', 10);
+  group.value = Number.parseInt(sessionStorage.getItem('parking-group') || '0', 10);
+  caravane.value = Number.parseInt(sessionStorage.getItem('caravane') || '0', 10);
+});
+
+const save = () => {
+  sessionStorage.setItem('car', car.value.toString());
+  sessionStorage.setItem('parking-group', group.value.toString());
+  sessionStorage.setItem('caravane', caravane.value.toString());
+}
 </script>
 
 <template>
@@ -20,7 +34,7 @@ const g = ref(0)
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="car" v-model="car" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
       <billetterie-card title="Parking de groupe de voiture" :price="40" class="xl:w-1/2">
@@ -32,7 +46,7 @@ const g = ref(0)
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="group" v-model="group" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
       <billetterie-card title="Parking voiture et caravane" :price="70" class="xl:w-1/2">
@@ -44,7 +58,7 @@ const g = ref(0)
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="caravane" v-model="caravane" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
     </section>

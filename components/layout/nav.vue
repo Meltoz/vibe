@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="bg-gray-50">
     <div>
       <ul class="hidden lg:flex justify-evenly h-16 items-center">
         <li>

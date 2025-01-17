@@ -31,8 +31,8 @@ const cards = [{
     <div class="grid grid-cols-1 xl:grid-cols-3 xl:mx-96 place-items-center gap-y-6">
       <div v-for="(card, index) in cards" class="w-[316px] h-[98px] xl:w-[276px] xl:h-[350px] rounded-lg overflow-hidden relative ">
         <img :src="`/imgs/billetterie/extras/${card.img}`"
-             :class="{'brightness-50': active || active === index+1}"
-             :alt="card.alt" class="w-full h-full object-cover "/>
+             :class="{'brightness-50': active && active === index+1}"
+             :alt="card.alt" class="w-full h-full object-cover"/>
         <h5 :class="card.color"
           class="absolute top-0 xl:top-5 left-1/2 -translate-x-1/2 text-base xl:text-xl font-bold xl:w-[214px] text-center backdrop-blur-sm p-1">{{card.title}}</h5>
         <NuxtLink

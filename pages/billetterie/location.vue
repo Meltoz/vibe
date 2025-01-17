@@ -4,7 +4,28 @@ import Stepper from '../../components/billetterie/stepper.vue';
 import CardExtra from '../../components/billetterie/card-extra.vue';
 import NumberPicker from '../../components/layout/form/number-picker.vue';
 
-const g = ref(0);
+const oneHour = ref(0);
+const fourHour = ref(0);
+const oneDay = ref(0);
+const twoDay = ref(0);
+const group = ref(0);
+
+// Exécute la logique côté client
+onMounted(() => {
+  oneHour.value = Number.parseInt(sessionStorage.getItem('oneHour') || '0', 10);
+  fourHour.value = Number.parseInt(sessionStorage.getItem('fourHour') || '0', 10);
+  oneDay.value = Number.parseInt(sessionStorage.getItem('oneDay') || '0', 10);
+  twoDay.value = Number.parseInt(sessionStorage.getItem('twoDay') || '0', 10);
+  group.value = Number.parseInt(sessionStorage.getItem('location-group') || '0', 10);
+});
+
+const save = () => {
+  sessionStorage.setItem('oneHour', oneHour.value.toString());
+  sessionStorage.setItem('fourHour', fourHour.value.toString());
+  sessionStorage.setItem('oneDay', oneDay.value.toString())
+  sessionStorage.setItem('twoDay', twoDay.value.toString())
+  sessionStorage.setItem('location-group', group.value.toString())
+}
 </script>
 
 <template>
@@ -21,7 +42,7 @@ const g = ref(0);
         </ul>
       </template>
       <template #number>
-        <number-picker id="mlskjdf" v-model="g" :max="10"/>
+        <number-picker id="oneHour" v-model="oneHour" @update:modelValue="save"  :max="10"/>
       </template>
     </billetterie-card>
     <billetterie-card title="Forfait 4h" :price="55" class="xl:w-1/2">
@@ -34,7 +55,7 @@ const g = ref(0);
         </ul>
       </template>
       <template #number>
-        <number-picker id="mlskjdf" v-model="g" :max="10"/>
+        <number-picker id="fourHour" v-model="fourHour" @update:modelValue="save"  :max="10"/>
       </template>
     </billetterie-card>
     <billetterie-card title="Forfait 1 Jour" :price="160" class="xl:w-1/2">
@@ -47,7 +68,7 @@ const g = ref(0);
         </ul>
       </template>
       <template #number>
-        <number-picker id="mlskjdf" v-model="g" :max="10"/>
+        <number-picker id="oneDay" v-model="oneDay" @update:modelValue="save" :max="10"/>
       </template>
     </billetterie-card>
     <billetterie-card title="Forfait 2 Jour" :price="300" class="xl:w-1/2">
@@ -60,7 +81,7 @@ const g = ref(0);
         </ul>
       </template>
       <template #number>
-        <number-picker id="mlskjdf" v-model="g" :max="10"/>
+        <number-picker id="twoDay" v-model="twoDay" @update:modelValue="save" :max="10"/>
       </template>
     </billetterie-card>
     <billetterie-card title="Forfait de groupe" information="(à partir de 4 locations)" :price="10" class="xl:w-1/2">
@@ -73,7 +94,7 @@ const g = ref(0);
         </ul>
       </template>
       <template #number>
-        <number-picker id="mlskjdf" v-model="g" :max="10"/>
+        <number-picker id="group" v-model="group" @update:modelValue="save" :max="10"/>
       </template>
     </billetterie-card>
   </section>

@@ -38,7 +38,8 @@ const prevStep = () => links[(props.currentStep-2)];
       </ul>
     </div>
       <slot></slot>
-    <section class="flex justify-between xl:max-w-full gap-5 xl:gap-[30rem] mx-6 xl:mx-[27.2rem] my-12">
+    <section class="flex  xl:max-w-full gap-5 xl:gap-[30rem] mx-6 xl:mx-[27.2rem] my-12"
+    :class="{'justify-between': currentStep > 1, 'justify-end': currentStep === 1}">
       <NuxtLink :to="prevStep()" v-if="currentStep > 1" class="basis-1/2 py-1 xl:py-0  text-center border-4 border-gray-400 rounded-lg shrink">Retour</NuxtLink>
       <NuxtLink :to="nextStep()" v-if="currentStep !== links.length" class=" basis-1/2 py-1  xl:py-0  text-center bg-[#E4819B] rounded-lg border-4 border-[#E4819B] shrink">Suivant</NuxtLink>
       <button v-if="currentStep === links.length" @click="() => emit('finished', null)" class="basis-1/2 py-1  xl:py-0  text-center bg-[#E4819B] rounded-lg border-4 border-[#E4819B] shrink">Paiement</button>

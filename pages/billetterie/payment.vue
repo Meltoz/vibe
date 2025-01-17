@@ -15,13 +15,13 @@ const closeModal = () => {
     <section>
       <div class="flex justify-center xl:justify-center gap-14 md:gap-32 xl:gap-48 my-10">
         <button @click="() => (isPaypal = false)"
-                :class="{'bg-gray-400 hover:bg-gray-300': !isPaypal, 'hover:bg-gray-400': isPaypal }"
-                class="shadow-lg rounded-xl p-4 xl:py-2 xl:px-[68px] xl:h-full transition-all duration-200 shrink"
+                :class="{'bg-gray-400 hover:bg-gray-300': !isPaypal, 'bg-gray-50 hover:bg-gray-400': isPaypal }"
+                class="shadow-lg rounded-xl p-4 xl:py-2 xl:px-[68px] xl:h-full transition-all duration-200 shrink "
         >
           <img src="/imgs/billetterie/paiement/card.svg"
                 class="h-20 xl:h-full"/></button>
         <button @click="() => (isPaypal = true)"
-                :class="{'bg-gray-400 hover:bg-gray-300': isPaypal, 'hover:bg-gray-400': !isPaypal }"
+                :class="{'bg-gray-400 hover:bg-gray-300': isPaypal, 'bg-gray-50 hover:bg-gray-400': !isPaypal }"
                 class="shadow-lg rounded-xl p-4 xl:py-2 xl:px-[68px] transition-all duration-200 shrink">
           <img src="/imgs/billetterie/paiement/paypal.svg" class="h-20 xl:h-full"/></button>
       </div>

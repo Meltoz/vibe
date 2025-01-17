@@ -4,7 +4,28 @@ import Stepper from '../../components/billetterie/stepper.vue';
 import CardExtra from '../../components/billetterie/card-extra.vue';
 import NumberPicker from '../../components/layout/form/number-picker.vue';
 
-const g = ref(0);
+const solo =ref(0);
+const family = ref(0);
+const group = ref(0);
+const campingCar = ref(0);
+const vip = ref(0);
+
+onMounted(() => {
+  solo.value = Number.parseInt(sessionStorage.getItem('solo') || '0', 10);
+  family.value = Number.parseInt(sessionStorage.getItem('family') || '0', 10);
+  group.value = Number.parseInt(sessionStorage.getItem('night-group') || '0', 10);
+  campingCar.value = Number.parseInt(sessionStorage.getItem('campingCar') || '0', 10);
+  vip.value = Number.parseInt(sessionStorage.getItem('vip') || '0', 10);
+});
+
+const save = () =>{
+  sessionStorage.setItem('solo', solo.value.toString());
+  sessionStorage.setItem('family', family.value.toString());
+  sessionStorage.setItem('night-group', group.value.toString());
+  sessionStorage.setItem('campingCar', campingCar.value.toString());
+  sessionStorage.setItem('vip', vip.value.toString());
+}
+
 </script>
 
 <template>
@@ -19,7 +40,7 @@ const g = ref(0);
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="solo" v-model="solo" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
       <billetterie-card title="Tente format famille" information="(3-6 personnes)" :price="40" class="xl:w-1/2">
@@ -31,7 +52,7 @@ const g = ref(0);
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="family" v-model="family" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
       <billetterie-card title="Tente groupe" information="(6-12 personnes)" :price="70" class="xl:w-1/2">
@@ -43,7 +64,7 @@ const g = ref(0);
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="group" v-model="group" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
       <billetterie-card title="Emplacement Camping Car" :price="100" class="xl:w-1/2">
@@ -55,7 +76,7 @@ const g = ref(0);
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="campingCar" v-model="campingCar" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
       <billetterie-card title="Emplacement Camping Car VIP" :price="150" class="xl:w-1/2">
@@ -67,7 +88,7 @@ const g = ref(0);
           </ul>
         </template>
         <template #number>
-          <number-picker id="mlskjdf" v-model="g" :max="10"/>
+          <number-picker id="vip" v-model="vip" @update:modelValue="save" :max="10"/>
         </template>
       </billetterie-card>
     </section>
