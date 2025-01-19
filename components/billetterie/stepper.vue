@@ -38,11 +38,10 @@ const prevStep = () => links[(props.currentStep-2)];
       </ul>
     </div>
       <slot></slot>
-    <section class="flex  xl:max-w-full gap-5 xl:gap-[30rem] mx-6 xl:mx-[27.2rem] my-12"
-    :class="{'justify-between': currentStep > 1, 'justify-end': currentStep === 1}">
-      <NuxtLink :to="prevStep()" v-if="currentStep > 1" class="basis-1/2 py-1 xl:py-0  text-center border-4 border-gray-400 rounded-lg shrink">Retour</NuxtLink>
-      <NuxtLink :to="nextStep()" v-if="currentStep !== links.length" class=" basis-1/2 py-1  xl:py-0  text-center bg-[#E4819B] rounded-lg border-4 border-[#E4819B] shrink">Suivant</NuxtLink>
-      <button v-if="currentStep === links.length" @click="() => emit('finished', null)" class="basis-1/2 py-1  xl:py-0  text-center bg-[#E4819B] rounded-lg border-4 border-[#E4819B] shrink">Paiement</button>
+    <section class="grid grid-cols-3 2xl:w-7/12 xl:w-9/12 mx-auto justify-items-center my-6">
+      <NuxtLink :to="prevStep()" v-if="currentStep > 1" class="mx-10 py-1 xl:py-0  w-[316px] xl:w-[276px]  text-center border-4 border-gray-400 rounded-lg shrink">Retour</NuxtLink>
+      <NuxtLink :to="nextStep()" v-if="currentStep !== links.length" class="col-start-3 mx-10 py-1 w-[316px] xl:w-[276px]  xl:py-0  text-center bg-[#E4819B] rounded-lg border-4 border-[#E4819B] shrink">Suivant</NuxtLink>
+      <button v-if="currentStep === links.length" @click="() => emit('finished', null)" class=" col-start-3 py-1  xl:py-0  text-center bg-[#E4819B] rounded-lg border-4 border-[#E4819B] shrink">Paiement</button>
     </section>
   </div>
 </template>

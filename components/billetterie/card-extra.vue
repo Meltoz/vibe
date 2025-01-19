@@ -27,9 +27,9 @@ const cards = [{
 
 <template>
   <section>
-    <h4 class="text-7xl">Les extras</h4>
-    <div class="grid grid-cols-1 xl:grid-cols-3 xl:mx-96 place-items-center gap-y-6">
-      <div v-for="(card, index) in cards" class="w-[316px] h-[98px] xl:w-[276px] xl:h-[350px] rounded-lg overflow-hidden relative ">
+    <h4 class="text-7xl 2xl:w-7/12 2xl:mx-auto xl:mx-40">Les extras</h4>
+    <div class="grid grid-cols-1 xl:grid-cols-3 2xl:w-7/12 xl:w-9/12 mx-auto justify-items-center  gap-y-6">
+      <div v-for="(card, index) in cards" class="w-[316px] h-[98px] xl:w-[276px] xl:h-[350px] rounded-lg overflow-hidden relative mx-10">
         <img :src="`/imgs/billetterie/extras/${card.img}`"
              :class="{'brightness-50': active && active === index+1}"
              :alt="card.alt" class="w-full h-full object-cover"/>
