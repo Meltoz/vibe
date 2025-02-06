@@ -23,16 +23,16 @@ const dayChanged = (daychanged: string) => {
   <section class="w-full md:w-1/2 space-y-6 md:space-y-20 px-3 md:mx-auto">
     <div class="flex justify-center gap-3">
       <button
-        class=" py-2 rounded bg-green-600 font-semibold basis-1/3 shrink hover:bg-green-800"
-        :class="{'bg-green-700' : day === 'all'}"
+        class=" py-2 rounded font-semibold basis-1/3 shrink hover:bg-pink-400 "
+        :class="{'bg-pink-700' : day === 'all','bg-vpink' : day !== 'all'}"
         @click="dayChanged('all')">Tous</button>
       <button
-        class=" py-2 rounded bg-blue-300 font-semibold basis-1/3 shrink hover:bg-blue-200"
-        :class="{'bg-blue-600' : day === 'friday'}"
+        class=" py-2 rounded font-semibold basis-1/3 shrink hover:bg-blue-200"
+        :class="{'bg-blue-600' : day === 'friday' , 'bg-vblue' : day !== 'friday'}"
         @click="dayChanged('friday')">Vendredi</button>
       <button
-        class=" py-2 rounded bg-pink-500 font-semibold basis-1/3 shrink hover:bg-pink-400"
-        :class="{'bg-pink-700' : day === 'saturday'}"
+        class=" py-2 rounded font-semibold basis-1/3 shrink hover:bg-green-800"
+        :class="{'bg-green-600' : day === 'saturday', 'bg-vgreen' : day !== 'saturday'}"
         @click="dayChanged('saturday')">Samedi</button>
     </div>
     <div class="relative px-10">

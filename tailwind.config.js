@@ -15,8 +15,9 @@ export default {
         roboto: 'Roboto'
       },
       colors: {
-        vink: '#E4819B',
-        vlue: '#99B8E2'
+        vgreen:'#D2DA90',
+        vpink: '#E4819B',
+        vblue: '#99B8E2'
       }
     }
   },

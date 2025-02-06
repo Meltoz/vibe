@@ -22,7 +22,8 @@ const props = defineProps<{
     </ul>
     <p class="text-center my-5 text-xs md:text-base">ATTENTION le parking est payant cette année</p>
   </div>
-  <div :style="{ backgroundColor: color }" class="rounded-r md:rounded-r-xl flex flex-col justify-center items-center gap-5 w-4/12 md:w-4/12 shadow-xl px-5">
+  <div  class="rounded-r md:rounded-r-xl flex flex-col justify-center items-center gap-5 w-4/12 md:w-4/12 shadow-xl px-5"
+  :class="color">
     <p class="text-4xl xl:text-6xl">{{price}}€</p>
     <slot></slot>
   </div>

@@ -43,5 +43,5 @@ const getDate = (artist: Performer) => {
   const d = new Date(artist.dateOfPerformance);
   return `Le ${d.getDate()} juin`
 }
-const getColor = (artist: Performer) => new Date(artist.dateOfPerformance).getDay() === 6 ? 'bg-[#E4819B]': 'bg-[#99B8E2]'
+const getColor = (artist: Performer) => new Date(artist.dateOfPerformance).getDay() === 6 ? 'bg-vgreen': 'bg-vblue'
 </script>

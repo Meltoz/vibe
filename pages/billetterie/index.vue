@@ -37,18 +37,18 @@ const save = () => {
       <card-entry
         title="Vendredi"
         :price="70"
-        color="#99B8E2"
+        color="bg-vblue"
         access="du vendredi"
       >
         <number-picker id="fdqsf" v-model="vendredi" @update:modelValue="save" :max="10" />
       </card-entry>
-      <card-entry title="Samedi" :price="70" color="#E4819B" access="du samedi" >
+      <card-entry title="Samedi" :price="70" color="bg-vgreen" access="du samedi" >
         <number-picker id="er" v-model="samedi" @update:modelValue="save" :max="10" />
       </card-entry>
       <card-entry
         title="2 Jours"
         :price="120"
-        color="#D2DA90"
+        color="bg-vpink"
         access="des deux jours"
       >
         <number-picker id="twoDay" v-model="twoDay"  @update:modelValue="save":max="10" />
